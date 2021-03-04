@@ -1,5 +1,7 @@
 pytest==6.2.2
 bump2version==1.0.1
+twine
+wheel
 
 boto3==1.17.21
 botocore==1.20.21

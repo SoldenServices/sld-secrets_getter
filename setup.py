@@ -10,7 +10,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = []
+requirements = ["boto3", "botocore", ]
 
 setup_requirements = ['pytest-runner', ]
 
@@ -33,12 +33,12 @@ setup(
     description="Wrapper for the AWS Secrets Manager libraries for getting secrets in a standard way.",
     install_requires=requirements,
     license="MIT license",
-    long_description=readme + '\n\n' + history,
+    long_description=readme,
+    long_description_content_type="text/markdown",
     include_package_data=True,
-    keywords='secrets_getter',
+    keywords='Secrets Manager',
     name='sld-secrets_getter',
     packages=find_packages(include=['secrets_getter', 'secrets_getter.*']),
-    setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/matt-larsen-sld/sld_secrets_getter',
