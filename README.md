@@ -6,10 +6,14 @@ Wrapper for the AWS Secrets Manager libraries for getting secrets in a standard 
 
 * Free software: MIT license
 
-Features
---------
+Usage
+-----
 
-* TODO
+Pre-requisites
+*********************
+
+* AWS credentials
+  *
 
 Credits
 -------

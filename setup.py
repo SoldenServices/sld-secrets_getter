@@ -4,10 +4,10 @@
 
 from setuptools import setup, find_packages
 
-with open('README.rst') as readme_file:
+with open('README.md') as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.rst') as history_file:
+with open('HISTORY.md') as history_file:
     history = history_file.read()
 
 requirements = ["boto3", "botocore", ]
@@ -34,7 +34,7 @@ setup(
     install_requires=requirements,
     license="MIT license",
     long_description=readme,
-    long_description_content_type="text/x-rst",
+    long_description_content_type="text/markdown",
     include_package_data=True,
     keywords='Secrets Manager',
     name='sld.secrets_getter',
@@ -42,6 +42,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/SoldenServices/sld.secrets_getter',
-    version='0.2.2',
+    version='0.2.3',
     zip_safe=False,
 )
