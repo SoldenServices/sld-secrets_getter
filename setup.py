@@ -34,7 +34,7 @@ setup(
     install_requires=requirements,
     license="MIT license",
     long_description=readme,
-    long_description_content_type="text/markdown",
+    long_description_content_type="text/x-rst::q!",
     include_package_data=True,
     keywords='Secrets Manager',
     name='sld-secrets_getter',
@@ -42,6 +42,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/matt-larsen-sld/sld_secrets_getter',
-    version='0.2.0',
+    version='0.2.1',
     zip_safe=False,
 )
